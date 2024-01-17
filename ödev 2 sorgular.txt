@@ -1,0 +1,28 @@
+create database yazm457hw2;
+
+create table product_backlog(
+taskId int auto_increment,
+	taskname varchar(30),
+	backlogId int,
+	priority int
+        PRIMARY KEY (taskId)
+);
+
+create table sprint_backlog(
+        taskId(int)
+	taskname varchar(30),
+	backlogId int,
+	sprintId int,
+	priority int
+        PRIMARY KEY(taskId)
+);
+
+create table board(
+        taskId(int)
+	taskname varchar(30),
+	backlogId int,
+	sprintId int,
+	developerName VARCHAR(15),
+	priority int
+        PRIMARY KEY(taskId)
+);
